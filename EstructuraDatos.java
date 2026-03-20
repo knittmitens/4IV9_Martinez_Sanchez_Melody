@@ -11,7 +11,7 @@ Vamos a crear 14 programas dentro de un menu gigante para poner a prueba sus con
 9.- Dibujitos
 10.- Figura Hueca
 11.- Diamante
-12.- Calculadora basica 
+12.- Calculadora basicaa 
 */
 
 import java.util.Scanner;
@@ -58,7 +58,7 @@ int figuradiamante = 0;
             System.out.println("2.- Decimales a binarios");
             System.out.println("3.- Conversion Temperaturas");
             System.out.println("4.- Numeros positivos y negativos");
-            System.out.println("5.- Tienda");
+            System.out.println("5.- Tiendita");
             System.out.println("6.- Area y Perimetro");
             System.out.println("7.- Tabla");
             System.out.println("8.- Calcular factorial");
