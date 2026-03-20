@@ -6,6 +6,12 @@ Vamos a crear 14 programas dentro de un menu gigante para poner a prueba sus con
 4.- Realizar un programa para contar numeros positivos y negativos de una serie de numeros 
 5.-Desarrollar una tienda para agregar productos y precios
 6.-Desarrollar un programa para calcular el area y perimetro de 5 diferentes figuras
+7.- Desarrollar una tabla
+8.- Calcular factorial sin recursividad
+9.- Dibujitos
+10.- Figura Hueca
+11.- Diamante
+12.- Calculadora basicaa 
 */
 
 import java.util.Scanner;
@@ -38,6 +44,11 @@ float arectangulo = 0;
 float btriangulo = 0;
 float altriangulo = 0;
 float atriangulo = 0;
+int numerofact = 0;
+int n1 = 0;
+int figurahueca = 0;
+int figuradiamante = 0;
+
         //aqui va el menu
         do{
 
@@ -47,8 +58,13 @@ float atriangulo = 0;
             System.out.println("2.- Decimales a binarios");
             System.out.println("3.- Conversion Temperaturas");
             System.out.println("4.- Numeros positivos y negativos");
-            System.out.println("5.- Tienda");
+            System.out.println("5.- Tiendita");
             System.out.println("6.- Area y Perimetro");
+            System.out.println("7.- Tabla");
+            System.out.println("8.- Calcular factorial");
+            System.out.println("9.- Dibujos pro");
+            System.out.println("10.-Figura hueca");
+            System.out.println("11.- diamante");
             System.out.println("14.- Salir");
 
             opcion = sc.nextInt();
@@ -214,6 +230,90 @@ acilindro = 2 * Math.PI * (bcilindro * baclindro);
 System.out.println("El area del cilindro es: " + acilindro);
                                 break;
 }
+                            case 7:
+// Tabla de multiplicar 
+System.out.println("Tabla del 10, 100, 1000");
+System.out.println("-------------------------------------------------");
+for(int n = 0; n <= 10; n++){
+    System.out.print(" | " + n + " " + " | ");
+    System.out.print(" | " + (n*10) + " " + " | ");
+    System.out.print(" | " + (n*100) + " " + " | ");
+    System.out.println(" | " + (n*1000) + " " + " | ");
+    System.out.println("-------------------------------------------------");
+}
+                            break;
+
+                            case 8:
+//numfactorial sin recursividad
+System.out.println("Por favor ingresa un numero para calcular su factorial");
+numerofact = sc.nextInt();
+for (int i = numerofact -1; i > 0; i-- ){
+numerofact = numerofact * i;
+}
+System.out.println("El numero factorial pedido es: " + numerofact);
+                            break;
+
+                            case 9:
+//vamos a realizar un cuadrado magicooo
+System.out.println("Vamos a realizar el dibujito de u cuadrado magico wuiiii");
+System.out.println("Por favor ingresa el tamaño del cuadrado");
+n1= sc.nextInt();
+if(n1 >= 1 && n1 <= 20){
+    for (int i = 1; i <= n1; i++){
+        for (int j = 0; j < n1 ; j++){
+            System.out.print(" * ");
+        }
+        System.out.println("");
+    }
+}else{
+    System.out.println("Ingrese solo valores entre 1 y 20");
+}
+                            break;
+
+case 10:
+// figura huecaaaaaaaaa:)))))
+System.out.println("Por favor ingresa el tamaño de la figura hueca");
+figurahueca = sc.nextInt();
+if (figurahueca >= 3 && figurahueca <= 20){
+    for (int i = 1; i <= figurahueca; i++){
+        for (int j = 1; j <= figurahueca; j++){
+            if (i==1 || i== figurahueca || j== 1 || j == figurahueca){
+                System.out.print("*");
+            }else{
+                System.out.print(" ");
+            }
+        }
+        System.out.println("");
+    }
+
+}else{
+    System.out.println("FAVOR DE INGRESAR VALORES ENTRE EL RANGO DE 3 Y 20");
+}
+System.out.println("");
+break;
+
+case 11:
+//Diamantito kawai
+System.out.println("Por favor ingresa el tamaño");
+figuradiamante = sc.nextInt();
+if ( figuradiamante >=1 && figuradiamante <= 20){
+    for(int i= 1; i <= figuradiamante; i++){
+        for(int j = 1; j <= figuradiamante -i; j++){
+            System.out.print(" ");
+
+        }
+        for(int k = 1; k <= (2*i) -1; k++){
+            System.out.print("*");
+        }
+System.out.println();
+    }
+
+}
+break;
+
+
+
+
                     default:System.out.println("Ingresa una opcion valida");
                     break;
             }System.out.println("Desea repetir el programa presione s");
