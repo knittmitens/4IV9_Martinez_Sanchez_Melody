@@ -71,7 +71,7 @@ public class Figuras {
                 System.out.println("Introduce el lado del cuadrado");
                 LadoCuadrado = entrada.nextDouble();
                 AreaCuadrado = Math.pow(LadoCuadrado, 2);
-                PerimetroCirculo = 4 * LadoCuadrado;
+                PerimetroCuadrado = 4 * LadoCuadrado;
                 System.out.println("El area del cuadrado es: " + AreaCuadrado);
                 System.out.println("El perimetro del cuadrado es: " + PerimetroCuadrado);
                 break;
